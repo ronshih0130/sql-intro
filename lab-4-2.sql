@@ -6,7 +6,11 @@
 -- AND column2 = expression2
 
 -- Expected result: 47 rows starting with
---
+select first_name , last_name from players
+InnerJoin on player.id=stats.player_id
+InnerJoin on team.id=stats.team_id
+where year = 2020 and park = "Chicago Cubs"
+
 -- +------------+-----------+
 -- | Jason      | Adam      |
 -- | Albert     | Almora    |

@@ -10,3 +10,5 @@
 -- +------+-------------------+
 
 
+SELECT year, name from teams
+Where park = "Guaranteed Rate Field"
